@@ -17,6 +17,13 @@
     height: auto;
     
   }
+  .logout {
+    width: 40px; /* Ajuste o tamanho da imagem de acordo com suas necessidades */
+    height: auto;
+    margin-left: 175vh;
+
+    
+  }
   
   .right-section1 {
     display: flex;
