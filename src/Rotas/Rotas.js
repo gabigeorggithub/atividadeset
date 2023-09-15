@@ -7,7 +7,7 @@ import Perguntas from "../pages/Perguntas/Perguntas";
 import Comentar from "../pages/Comentar/Comentar";
 import Assunto from "../pages/Assunto/Assunto";
 
-function Rotas() {
+function Rotas(props) {
     return (
 
         <BrowserRouter>
@@ -15,7 +15,7 @@ function Rotas() {
                 <Route index element={<TelaInicial />}/>
                 <Route path="login" element={<Login />}/>
                 <Route path="cadastro" element={<Cadastro />}/>
-                <Route path="feed" element={<Feed />}/>
+                <Route path="feed" element={<Feed news={props.news} setNews={props.setNews}/>}/>
                 <Route path="perguntas" element={<Perguntas />}/>
                 <Route path="comentar" element={<Comentar />}/>
                 <Route path="assunto" element={<Assunto />}/>

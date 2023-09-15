@@ -26,7 +26,7 @@ const Header = () => {
   const goToPerguntas = () =>{
     navigate('/perguntas')
   }
-
+  
   return (
     <header className="header-container1">
       <div className="left-section1">

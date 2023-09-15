@@ -17,10 +17,10 @@ function Assunto() {
 
   return (
     <>
-    <Header/>
+    {/* <Header/>
     <Post/>
     <SubPost/>
-    <Plus/>
+    <Plus/> */}
 
     </>
 

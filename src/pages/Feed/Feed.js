@@ -6,33 +6,16 @@ import { useNavigate } from 'react-router-dom';
 import Plus from '../../components/Plus/Plus';
 
 
-function Feed() {
+function Feed(props) {
 
-  // const navigate = useNavigate();
-
-  // useEffect(()=>{
-  //   const token = localStorage.getItem('token')
-  //   if(!token){
-  //   navigate('/')
-  //   }
-
-  // }, [navigate])
-
-  // const handleLogOut = () =>{
-  //   localStorage.removeItem('token')
-  //   localStorage.removeItem('email')
-  //   navigate('/')
-  // }
-  // const goToPerguntas = () =>{
-  //   navigate('/perguntas')
-  // }
   return (
     <>
-    <Header/>
+    <Post news={props.news}
+    setNews={props.setNews} />
+    {/* <Header/>
     <Post/>
     <Post/>
-    <Plus/>
-    {/* <button onClick={handleLogOut}>LogOut</button> */}
+    <Plus/> */}
     </>
 
   );
